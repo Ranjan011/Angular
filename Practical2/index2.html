@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="./style2.css">
+    <!-- <script src="./index.js" defer></script> -->
+</head>
+
+<body>
+
+    <form action="" name="regform" method="GET" onsubmit="return formValidation(event)">
+        <div class="form" >
+            <div class="heading">
+                <h3>User Registration</h3>
+            </div>
+            <div>
+                <input class="input" type="text" name="Name" id="name" placeholder="Enter your Name : ">
+                <span class="error" id="nerr">Enter your name</span>
+                <span class="error" >Enter valid name</span>
+            </div>
+
+            <div>
+                <input class="input" type="password" name="password" id="password" placeholder="Enter your Passworrd :">
+                <span class="error" id="perr" >Enter your password</span>
+                <span class="error" id="verr" >Enter valid password</span>
+            </div>
+
+            <div>
+                <input class="input" type="password" name="conpassword" id="cpassword" placeholder="Re-Enter the Password">
+
+                <span class="error" id="rperr" >Cpnfirm your Password</span>
+                <span class="error" id="reperr" >Password not matched. Retype the password</span>
+            </div>
+
+            <div>
+                <input class="input" type="text" name="email" id="email" placeholder="Enter your E-mail address">
+
+                <span class="error" id="emailerr" >Enter your Email</span>
+                <span class="error" id="validemailerr" >Enter valid Email address</span>
+            </div>
+
+            <div>
+                <input class="input" type="text" name="contact" id="contact-number" min="1"  placeholder="Enter your Contact Number">
+
+                <span class="error" id="conerr" >Enter your contact number</span>
+
+                <span class="error" id="validcon" >Enter valid contact number</span>
+            </div>
+
+            <div>
+                <input class="input" type="date" name="dob" id="dob" placeholder="Enter your Date-of-Birth">
+            </div>
+            <div class="gender">
+                <p>Select your Gender :</p>
+                <input type="radio" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" value="Other">
+                <label for="other">Other</label>
+
+            </div>
+
+            <div class="gender">
+                <input  type="checkbox" name="agree" id="#"><span>I agree to the <a href="">terms & conditions.</a></span>
+                <!-- <span class="error" id="nerr" >Enter your name</span> -->
+            </div>
+            <div>
+                <input type="submit" class="input" value="submit">
+                <!-- <button id="submit" class="input" type="submit">Submit</button> -->
+            </div>
+       </div>
+    </form>
+
+
+    <script src="./index2.js"></script>
+</body>
+
+</html>
